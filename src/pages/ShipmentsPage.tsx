@@ -3,6 +3,7 @@ import { Box, makeStyles, useTheme } from "@material-ui/core"
 import { DataGrid, GridColDef } from "@material-ui/data-grid"
 import Loader from 'react-loader-spinner'
 import { fetchShipments, FetchShipmentsResult } from "../data/fetch-shipments"
+import React from "react"
 
 const COLUMNS: GridColDef[] = [
     {
@@ -50,7 +51,7 @@ const COLUMNS: GridColDef[] = [
 const useStyles = makeStyles({
     grid: {
         marginInline: 16,
-        height: '100%'
+        height: '91vh'
     },
     loader: {
         margin: 'auto',
@@ -84,6 +85,7 @@ export const ShipmentsPage: React.FC = () => {
                 columns={COLUMNS}
                 pageSize={20}
                 disableSelectionOnClick
+
             />
             break;
         case 'LOADING':

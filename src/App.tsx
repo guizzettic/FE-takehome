@@ -5,6 +5,7 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { DashboardPage } from './pages/DashboardPage';
 import { ShipmentsPage } from './pages/ShipmentsPage';
+import React from 'react';
 
 
 const theme = createTheme({
